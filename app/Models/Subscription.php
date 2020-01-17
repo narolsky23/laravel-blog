@@ -7,8 +7,6 @@ use Illuminate\Support\Str;
 
 class Subscription extends Model
 {
-    public $token;
-
     public static function add($email)
     {
         $sub = new static;

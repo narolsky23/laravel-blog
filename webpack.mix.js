@@ -35,9 +35,33 @@ mix.scripts([
     'resources/admin/plugins/iCheck/icheck.min.js',
     'resources/admin/dist/js/app.min.js',
     'resources/admin/dist/js/demo.js',
-    'resources/dmin/dist/js/scripts.js'
+    'resources/admin/dist/js/scripts.js'
 ], 'public/js/admin.js');
 
 mix.copyDirectory('resources/admin/bootstrap/fonts', 'public/fonts');
 mix.copyDirectory('resources/admin/dist/fonts', 'public/fonts');
 mix.copyDirectory('resources/admin/dist/img', 'public/img');
+mix.copy('resources/admin/plugins/iCheck/minimal/blue.png', 'public/css');
+
+mix.styles([
+    'resources/front/css/bootstrap.min.css',
+    'resources/front/css/font-awesome.min.css',
+    'resources/front/css/animate.min.css',
+    'resources/front/css/owl.carousel.css',
+    'resources/front/css/owl.theme.css',
+    'resources/front/css/owl.transitions.css',
+    'resources/front/css/style.css',
+    'resources/front/css/responsive.css'
+],'public/css/front.css');
+
+mix.scripts([
+    'resources/front/js/jquery-1.11.3.min.js',
+    'resources/front/js/bootstrap.min.js',
+    'resources/front/js/owl.carousel.min.js',
+    'resources/front/js/jquery.stickit.min.js',
+    'resources/front/js/menu.js',
+    'resources/front/js/scripts.js'
+], 'public/js/front.js');
+
+mix.copyDirectory('resources/front/fonts', 'public/fonts');
+mix.copyDirectory('resources/front/images', 'public/images');

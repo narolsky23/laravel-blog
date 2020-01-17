@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-    public $status;
-
     public function post()
     {
         return $this->hasOne(Post::class);
